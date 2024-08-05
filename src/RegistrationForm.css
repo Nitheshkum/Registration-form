@@ -1,0 +1,95 @@
+.container-fluid {
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.image-section {
+  background-color: #f5f5f5;
+  width: 50%; /* Adjust the width as needed */
+  height: 100vh; /* Full height of viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.form-section {
+  background-color: #e0f7fa;
+  margin-left: 50%; /* Push the form section to the right of the image section */
+  width: 50%;
+  padding: 20px;
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100vh; /* Full height of viewport */
+  background: rgba(201, 230, 255, 1) !important;
+}
+
+.form-section h2 {
+  font-weight: 700;
+  color: rgba(33, 39, 42, 1);
+}
+
+.form-section p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(33, 39, 42, 1) !important;
+}
+
+.form-label {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(33, 39, 42, 1) !important;
+}
+
+.orgmobile {
+  width: 100% !important; /* Full width for responsiveness */
+  max-width: 100%; /* Ensure it does not exceed container width */
+}
+
+.btn-primary {
+  width: 100%;
+  height: 48px !important; /* Fixed height */
+  gap: 0px;
+  border-radius: 5px 0px 0px 0px;
+  border: 2px solid rgba(0, 137, 255, 1);
+  margin-top: 35px !important;
+  background: rgba(0, 137, 255, 1);
+}
+
+.btn-primary:hover {
+  background-color: #004d40;
+  border-color: #004d40;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .form-section {
+    padding: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .image-section {
+    width: 100%;
+    position: static;
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    padding: 5px;
+  }
+}
+
+.error {
+  color: red;
+}
